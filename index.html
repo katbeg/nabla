@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fira+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Nabla</title>
+    <style>
 
+        /* font-family: 'Abril Fatface', cursive;
+        font-family: 'Fira Sans', sans-serif; */
+
+        @media screen and (min-width: 1024px) {
+            .header {
+             display: grid;
+             grid-template-columns: 1fr;
+             grid-template-rows: 10% 90%;
+             grid-template-areas: "menu"
+            "headerBlock";
+             max-height: 740px;
+             max-width: 100%;
+            }
+
+            .menu {
+                max-width: 100%;
+                grid-area: menu;
+                display: grid;
+                grid-template-columns: 20% 40% 10% 10%;
+            }
+
+            .logo {
+                grid-template-columns: 1/2;
+            }
+
+            .nav {
+                grid-template-columns: 2/3;
+            }
+
+            .languages {
+                grid-template-columns: 3/4;
+            }
+
+            .getAccess {
+                grid-template-columns: 4/5;
+            }
+
+
+            
+            .headerBlock {
+                grid-area: headerBlock;
+            }
+        }
+
+        /* @media screen and (max-width: 1023px) and (min-width: 768px) {
+            
+        } */
+
+        @media screen and (max-width: 767px) {
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        
+        .headerBlock {
+            background-image: url('images/headerBack.png');
+            background-size: cover;
+        }
+        .mainTitle {
+            font-family: 'Abril Fatface', cursive;
+            color: #040062;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: 'Fira Sans', sans-serif; 
+            color: #040062;
+            font-size: 1em;
+        }
+
+        a:hover {
+            -webkit-text-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.5);
+            -moz-text-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.5);
+            text-shadow: 0px 1px 5px 0px rgba(50, 50, 50, 0.5);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="menu">
+            <img src="images/logo.png" alt="Logo" class="logo">
+            <nav class="nav">
+                <a href="" class="menuLink">Home</a>
+                <a href="" class="menuLink">Vision</a>
+                <a href="" class="menuLink">Team</a>
+                <a href="" class="menuLink">Careers</a>
+                <a href="" class="menuLink">Blog</a>
+            </nav>
+            <select name="languages" id="languages" class="languages">
+                <option value="en">EN</option>
+                <option value="ru">RU</option>
+            </select>
+            <button class="getAccess">Get early access</button>
+        </div>
+        <div class="headerBlock">
+            <h1 class="mainTitle">Your connection to your everyday health</h1>
+            <img src="images/computer.png" alt="Girl with the computer">
+            <img src="images/plant.png" alt="Girl with the plant">
+        </div>
+    </header>
+</body>
+</html>
